@@ -56,8 +56,10 @@ const run = async (config: IOSConfigOptions) => {
   for (const size of iosIconsSize) {
     const image = await sharp(config.source);
     const pathImage = path.resolve(appIconPath, `${size}.png`);
+
     await image
       .resize(size, size)
+      .flatten(config.removeAlphaIos)
       .toFile(pathImage)
       .then((_) => {
         log("✨ " + pathImage);

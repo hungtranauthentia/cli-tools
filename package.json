@@ -1,11 +1,9 @@
 {
-  "name": "rn-ml",
-  "version": "0.0.1",
+  "name": "rn-ml-authentia",
+  "version": "0.0.2",
   "description": "React Native cli tools",
   "main": "./lib/bin.js",
-  "bin": {
-    "rn-ml": "./lib/bin.js"
-  },
+  "bin": "./lib/bin.js",
   "publishConfig": {
     "access": "public"
   },
@@ -14,16 +12,16 @@
   ],
   "scripts": {
     "build": "tsc -p .",
-    "local": "yarn build && npm uninstall -g rn-ml &&  npm i -g"
+    "local": "yarn build && npm uninstall -g rn-ml-authentia &&  npm i -g"
   },
   "keywords": [
     "cli-tools",
-    "rn-ml",
+    "rn-ml-authentia",
     "rn command",
     "cli",
     "react-native"
   ],
-  "author": "Mason Le",
+  "author": "Hung Tran",
   "license": "MIT",
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

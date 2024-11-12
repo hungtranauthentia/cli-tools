@@ -5,10 +5,14 @@ export type Options = {
   source: string;
   androidSource: string;
   iosSource: string;
+  removeAlphaIos: boolean;
 };
 
 export type IOSConfigOptions = Omit<Options, "androidSource" | "flavor">;
-export type AndroidConfigOptions = Omit<Options, "iosIconName" | "iosSource">;
+export type AndroidConfigOptions = Omit<
+  Options,
+  "iosIconName" | "iosSource" | "removeAlphaIos"
+>;
 export type AndroidGenIconArg = {
   coverSize: number;
   iconSize: number;

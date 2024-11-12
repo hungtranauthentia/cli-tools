@@ -1,6 +1,7 @@
 import path from "path";
 
 export const DEFAULT_ANDROID_FLAVOR = "main";
+export const DEFAULT_REMOVE_ALPHA_IOS = true;
 export const DEFAULT_ICON_IOS = "AppIcon";
 export const DEFAULT_IOS_SOURCE = "./ios";
 export const DEFAULT_ANDROID_SOURCE = "./android";

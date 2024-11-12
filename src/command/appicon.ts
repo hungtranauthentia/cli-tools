@@ -6,6 +6,7 @@ import {
   DEFAULT_ICON_IOS,
   DEFAULT_IOS_SOURCE,
   DEFAULT_PLATFORM,
+  DEFAULT_REMOVE_ALPHA_IOS,
   LIST_PLATFORM,
 } from "../appicon/constants";
 
@@ -43,6 +44,12 @@ const appIconSetup = (program: Command) => {
       new Option("-is, --ios-source <string>", "Path to ios source").default(
         DEFAULT_IOS_SOURCE
       )
+    )
+    .addOption(
+      new Option(
+        "-rai, --remove-alpha-ios <boolean>",
+        "Remove alpha channel from all images"
+      ).default(DEFAULT_REMOVE_ALPHA_IOS)
     )
     .action(run);
 };

@@ -3,7 +3,7 @@
 ## Command
 
 - [`appicon`](#appicon)
-  
+
 ### `appicon`
 
 <img src="./preview/appicon.gif"/>
@@ -11,7 +11,7 @@
 Usage:
 
 ```sh
-npx rn-ml appicon <flag>
+npx rn-ml-authentia appicon <flag>
 ```
 
 #### `-s <path>` or `--source <path>` (Required)
@@ -30,15 +30,21 @@ Either "ios" or "android" or "ipad" or "all"
 
 #### `-ar <string>` or `--android-source <string>`
 
->default: ./android
+> default: ./android
 
 Custom android path
 
 #### `-is <string>` or `--ios-source <string>`
 
->default: ./ios
+> default: ./ios
 
 Custom ios path
+
+#### `-rai <boolean>` or `--remove-alpha-ios <boolean>`
+
+> default: true
+
+Remove alpha channel from all images on iOS
 
 # License
 
